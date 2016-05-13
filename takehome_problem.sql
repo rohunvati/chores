@@ -118,6 +118,8 @@ from (
 		from opendoor_query1
 		order by td asc) a
 
+
+# the above query returns 9000.
 select timestampdiff(minute, created_at, claimed_at) as td
 from opendoor_query1
 order by td asc limit 9001, 1
